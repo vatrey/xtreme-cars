@@ -1,0 +1,24 @@
+.header {
+    padding: 1rem 5rem;
+    background-color: #000000;
+    font-family: Roboto;
+    font-style: normal;
+    color: #FFFFFF;
+    
+}
+.flex-chunk {
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+.logo {
+    align-items: center;
+    display: flex;
+}
+#heavy {
+    font-weight: 800;
+}
+.head {
+    font-weight: 400;
+}
