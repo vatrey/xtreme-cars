@@ -1,0 +1,29 @@
+.success-box {
+    border: 1px black solid;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 32px;
+    padding: 3rem;
+}
+#bmw {
+    max-width: 100%;
+    position: relative;
+}
+#download-link {
+    text-decoration-line: underline;
+    color:#790E22;
+}
+#parent-overlay{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-bottom: 3rem;
+}
+#bkg {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    right: 0;
+    height: 31rem;
+    background-color: #000000;
+}
