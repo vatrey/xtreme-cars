@@ -1,0 +1,64 @@
+#car-form-grid {
+    justify-content:space-between;
+}
+
+#container-details-car {
+    min-width: 20rem;
+    background-color: #F5F5F5;
+    margin-bottom: 3rem;
+}
+
+#container-form-car {
+    background-color: #F5F5F5;
+    margin-bottom: 3rem;
+}
+
+.form-car-details {
+    padding: 3rem;
+}
+
+#input-field {
+    width: 10rem;
+}
+
+.head {
+    margin-bottom: 2rem;
+}
+
+#condition {
+    font-weight: 500;
+    font-size: 12px;
+    padding: 2rem 0 4rem 0;
+}
+
+#condition-head {
+    font-weight: 800;
+}
+
+#submit {
+    background-color: #790E22;
+}
+
+#car-name {
+    font-weight: 600;
+    font-size: 32px;
+    padding: 3rem 0;
+}
+
+.car-att {
+    font-weight: 300;
+    font-size: 16px;
+    padding-bottom: 1rem;
+}
+
+.car-att-value {
+    font-weight: 500;
+    font-size: 20px;
+}
+#details-link {
+    font-weight: 600;   
+    font-size: 20px;
+    margin:auto;
+    margin-top: 2rem;
+    text-align: center;
+}
