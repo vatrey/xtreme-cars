@@ -1,8 +1,12 @@
-import { Box, Grid } from "@mui/material";
+import { Box, Button, Grid } from "@mui/material";
 import "./Header.scss";
 import logo from "../../assets/Union.svg";
+import { useNavigate } from "react-router-dom";
 
 function Header(): JSX.Element {
+
+    const navigate = useNavigate();
+
     return (
         <Box className="header">
             <Grid className="flex-chunk" container spacing={5}>
@@ -11,12 +15,16 @@ function Header(): JSX.Element {
                         <Grid className="flex-chunk" container>
                             <Grid className="head-links" item>
                                 <Box className="logo">
-                                    <img src={logo} alt="" />
-                                    <span>XTREME<span id="heavy">CARS</span></span>
+                                    <Button onClick={() => navigate("/")}>
+                                        <img src={logo} alt="" />
+                                        <span className="header-links">XTREME<span id="heavy">CARS</span></span>
+                                    </Button>
                                 </Box>
                             </Grid>
                             <Grid className="head-links" item>
-                                NEW CARS
+                                <Button onClick={() => navigate("/cars")}>
+                                    <span className="header-links">NEW CARS</span>
+                                </Button>
                             </Grid>
                         </Grid>
                     </Box>
@@ -25,10 +33,14 @@ function Header(): JSX.Element {
                     <Box>
                         <Grid className="flex-chunk" container>
                             <Grid className="head-links" item>
-                                USED CARS
+                                <Button onClick={() => navigate("/cars")}>
+                                    <span className="header-links">USED CARS</span>
+                                </Button>
                             </Grid>
                             <Grid className="head-links" item>
-                                MY PROFILE
+                                <Button>
+                                    <span className="header-links">MY PROFILE</span>
+                                </Button>
                             </Grid>
                         </Grid>
                     </Box>
