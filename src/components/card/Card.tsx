@@ -1,22 +1,32 @@
-import { Grid, Box } from "@mui/material";
-
+import { Grid, Box, IconButton } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 import Arrow from "../../assets/Arrow.svg";
+import { Car } from "../../types/Types";
 import "./Card.scss";
 
-function Card(): JSX.Element {
+interface IProps {
+    car: Car
+}
+
+function Card(props: IProps): JSX.Element {
+
+    const navigate = useNavigate();
+
     return (
         <Box className="card">
             <Box>
-                
+                <img id="car-image" src={props.car.image} alt="" />
             </Box>
             <Box className="des">
-                <p>BMW X3</p>
+                <p id="car-model">{props.car.name}</p>
                 <Grid id="price-arrow" container >
-                    <Grid item>
-                        669.69 lakh onward
+                    <Grid className="car-value" item>
+                        {props.car.price} lakh onward
                     </Grid>
                     <Grid item>
-                    <img src={Arrow} alt="" />
+                        <IconButton onClick={() => navigate("/car-details?id=" + props.car.id)}>
+                            <img src={Arrow} alt="" />
+                        </IconButton>
                     </Grid>
                 </Grid>
             </Box>

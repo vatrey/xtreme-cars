@@ -1,12 +1,31 @@
 .card {
     border: 1px solid rgba(0, 0, 0, 0.2);
-    max-width: fit-content;
+    height: 23rem;
+    width: 18rem;
 }
 
 #price-arrow {
     justify-content: space-between;
+    align-items: center;
 }
 
 .des {
     padding: 1rem;
+}
+
+.car-value {
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.car-model {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#car-image {
+    height: 12rem;
+    max-width: 100%;
+    object-fit: cover;
 }
