@@ -1,0 +1,32 @@
+#car-list {
+    justify-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.MuiBottomNavigation-root {
+    justify-content: start !important;
+    width: fit-content;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #F5F5F5 !important;
+}
+
+.Mui-selected {
+    background-color: #000000 !important;
+    color: #FFFFFF;
+}
+
+.nav {
+    margin-bottom: 2rem;
+}
+
+#count-result {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+
+#grid {
+    padding-bottom: 3rem;
+}
