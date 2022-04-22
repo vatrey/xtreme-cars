@@ -1,10 +1,14 @@
-import { Box, Grid } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import "./BookingConfirmation.scss";
 import Bmw from "../../assets/BMW - Explore.svg";
 import Bmwx5 from "../../assets/dummy.svg";
+import { useNavigate } from "react-router-dom";
 
 function BookingConfirmation(): JSX.Element {
-    return (
+
+    const navigate = useNavigate();
+
+    return ( 
         <Box>
             <Box style={{ height: "5rem" }}></Box>
             <Box className="main-body">
@@ -25,8 +29,11 @@ function BookingConfirmation(): JSX.Element {
                             </Box>
                             <Box id="parent-overlay">
                                 <img id="bmw" src={Bmw} alt="" />
-                                <Box id="bkg" />
+                                <Box id="bkg" >
+                                <Button onClick={() => navigate("/")}><span id="explore-more">Explore More</span></Button>
+                                </Box>
                             </Box>
+                            <Box id="spacing"/>
                         </Box>
                     </Box>
                 </Box>
