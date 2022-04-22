@@ -28,9 +28,11 @@ function CarDetails(): JSX.Element {
                             <p className="grid-head">{car?.specifications?.name}</p>
                         </Box>
                         <Box>
-                            <Grid container>
+                            <Grid className="divider" container>
                                 <Grid className="details-img" item>
-                                    <img className="details-img-real" src={car?.specifications?.image} alt="sas"></img>
+
+                                    <img className="details-img-real" src={car?.specifications?.image} alt=""></img>
+
                                 </Grid>
                                 <Grid className="desc" item>
                                     <Box>
@@ -72,9 +74,9 @@ function CarDetails(): JSX.Element {
                             </Grid>
                         </Box>
                         <Box>
-                            <Grid container>
+                            <Grid className="divider" container>
                                 <Grid className="details-img" item>
-                                    <img className="details-img-real" src={car?.exterior?.image} alt="exterior"></img>
+                                    <img className="details-img-real" src={car?.exterior?.image} alt=""></img>
                                 </Grid>
                                 <Grid className="desc" item>
                                     <Box className="grid-head">
@@ -95,10 +97,10 @@ function CarDetails(): JSX.Element {
                             </Grid>
                         </Box>
                         <Box>
-                            <Grid container>
+                            <Grid className="divider" container>
                                 <Grid className="details-img" item>
-                                    <img className="details-img-real" src={car?.interior?.image1} alt="interior1"></img><br />
-                                    <img className="details-img-real" src={car?.interior?.image2} alt="interior2"></img>
+                                    <img className="details-img-real" src={car?.interior?.image1} alt=""></img><br />
+                                    <img className="details-img-real" src={car?.interior?.image2} alt=""></img>
                                 </Grid>
                                 <Grid className="desc" item>
                                     <Box className="grid-head">
@@ -120,16 +122,16 @@ function CarDetails(): JSX.Element {
                                             }
                                         </ul>
                                     </Box>
-                                    <Box id="btn-con">
-                                        <Button id="purchase" variant="contained" size="large" onClick={() => navigate("/booking?id=" + queryParams.get('id'))}> Submit</Button>
-                                    </Box>
                                 </Grid>
                             </Grid>
                         </Box >
+                        <Box id="btn-con">
+                            <Button id="purchase" variant="contained" size="large" onClick={() => navigate("/booking?id=" + queryParams.get('id'))}> Submit</Button>
+                        </Box>
                     </Box>
                 </Box>
             </Box>
-        </Box>
+        </Box   >
     );
 }
 
