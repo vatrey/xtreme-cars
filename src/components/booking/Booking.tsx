@@ -10,7 +10,7 @@ function Booking(): JSX.Element {
     const navigate = useNavigate();
     const dispatch = useDispatch();
 
-    const [formState, setFormState] = useState({ nameValid: true, phoneValid: true });
+    const [formState, setFormState] = useState({ nameValid: true, phoneValid: true});
 
     const car = useSelector((state: any) => state.carReducer);
     const queryParams = new URLSearchParams(window.location.search);
@@ -96,10 +96,10 @@ function Booking(): JSX.Element {
                                                 margin="dense"
                                                 variant="filled"
                                             >
-                                                <MenuItem>Delhi</MenuItem>
-                                                <MenuItem>Banglore</MenuItem>
-                                                <MenuItem>Mumbai</MenuItem>
-                                                <MenuItem>Hyderabad</MenuItem>
+                                                <MenuItem value="0">Delhi</MenuItem>
+                                                <MenuItem value="1">Banglore</MenuItem>
+                                                <MenuItem value="2">Mumbai</MenuItem>
+                                                <MenuItem value="3">Hyderabad</MenuItem>
                                             </Select>
                                         </FormControl>
                                         <FormControlLabel control={<Checkbox />} label="I accept the Terms and conditions" />
